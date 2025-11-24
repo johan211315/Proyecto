@@ -125,7 +125,7 @@ header > nav{
     max-height: 700px;
     width: 30%;
     max-width: 450px;
-    min-width: 300px;
+    min-width: 330px;
     position: relative;
     top: -100px;
     right: 50px;
@@ -207,6 +207,138 @@ header > nav{
     transition: all 0.3s ease-in-out;
 }
 
+#bio{
+    max-width: 100%;
+    padding: 0.5em 10em 1em 10em;
+    display: flex;
+    min-height: 100svh;
+    justify-content: center;
+    align-items: center;
+}
+
+#exp > h2, h3{
+    text-align: center;
+    color: white;
+}
+
+#exp-boxes{
+    display: flex;
+    gap: 50px;
+    flex-flow:wrap;
+    justify-content: center;
+}
+
+.exp-1, .exp-2, .exp-3, .exp-4 {
+    background-color: var(--color-bg-card);
+    color: white;
+    border-radius: var(--radius);
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
+    padding: 0.5em;
+    margin-top: 2em;
+    width: 45%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+}
+
+.exp-1 h4, .exp-1 h5, .exp-1 p{
+    margin: 0.3em;
+    padding: 0.5em;
+    background-color: transparent
+}
+.exp-1 i  {
+    font-size: 100px;
+
+}
+
+
+.exp-2 h4, .exp-2 h5, .exp-2 p{
+    margin: 0.3em;
+    padding: 0.5em;
+    background-color: transparent
+}
+.exp-2 i  {
+    font-size: 100px;
+
+}
+
+.exp-3 h4, .exp-3 h5, .exp-3 p{
+    margin: 0.3em;
+    padding: 0.5em;
+    background-color: transparent
+}
+.exp-3 i  {
+    font-size: 100px;
+
+}
+
+.exp-4 h4, .exp-4 h5, .exp-4 p{
+    margin: 0.3em;
+    padding: 0.5em;
+    background-color: transparent
+}
+.exp-4 i  {
+    font-size: 100px;
+
+}
+
+.exp-1:hover, .exp-2:hover, .exp-3:hover, .exp-4:hover {
+    box-shadow: var(--shadow-card);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    border-color: hotpink;
+    border: 5px solid;
+}
+
+
+
+/*
+.bio-image{
+   min-height: 80vsh;
+   max-width: 30%;
+
+    
+}
+.bio-image > img{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    height: 40%;
+}
+
+.bio-content{
+    flex-grow: 1;
+    margin-left: 5em;
+}
+    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 900px)
  {
     .nav-list{
@@ -218,9 +350,36 @@ header > nav{
         margin-right: 1em;
         font-size: 5px;
         cursor: pointer;
+        
     }
 
-    
+    #hero > img {
+        display: none;
+
+
+    }
+
+    #hero{
+  position: relative;
+  top: -30px;
     
 }
+ 
+#bio {
+  flex-direction: column;
+  align-items: center;
+  min-width: 100%;
+}
 
+#exp {
+  flex-direction: column;
+  align-items: center;
+  min-width: 100%;
+}
+
+#exp-boxes {
+  flex-direction: column;
+  align-items: center;
+  min-width: 50%;
+}
+ }
