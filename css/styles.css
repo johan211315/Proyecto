@@ -37,25 +37,39 @@
 *{
     box-sizing: border-box;
     font-family: var(--font-main);
-    background-color: var(--color-bg);
+    padding: 0;
+    margin: 0;
+    
 }
 
+main, header{
+     
+     background-repeat: no-repeat;
+     background-image:url(../media/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
 
 header{
     display: flex;
-  
+    position:sticky;
+    background-color:transparent ;
+
 }
 
 header > img{
     width: 10em; 
     height: 100px;
     margin-left: 10px;
+    position: fixed;
 }
 
 header > nav{
     flex-grow: 1;
     display: flex;
     justify-content: center;
+    
 }
 
 .nav-list{
@@ -64,6 +78,8 @@ header > nav{
     list-style: none;
     justify-content: space-around;
     margin-top: 3em;
+    position: fixed;
+   
     
 }
 .nav-list > li > a:hover{
@@ -103,6 +119,20 @@ header > nav{
 .menu{
     display: none;
 }
+.intro{
+    height: 130svh;
+    width: 100%;
+}
+.intro-div img{
+    height: 100%;
+    width: 100%;
+}
+.logo-jm{
+    display:flex;
+    position: absolute;
+}
+
+
 
 #hero{
     padding-top: 10em;
@@ -208,7 +238,7 @@ header > nav{
 }
 
 #bio{
-    max-width: 100%;
+    min-width: 100%;
     padding: 0.5em 10em 1em 10em;
     display: flex;
     min-height: 100svh;
@@ -216,10 +246,21 @@ header > nav{
     align-items: center;
 }
 
-#exp > h2, h3{
+#exp > h2{
     text-align: center;
     color: white;
+    font-size: 50px;
+    margin-top: 0;
 }
+
+
+#exp > h3{
+    text-align: center;
+    color: #c403ff;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
 
 #exp-boxes{
     display: flex;
@@ -229,7 +270,7 @@ header > nav{
 }
 
 .exp-1, .exp-2, .exp-3, .exp-4 {
-    background-color: var(--color-bg-card);
+    
     color: white;
     border-radius: var(--radius);
     -webkit-border-radius: var(--radius);
@@ -290,44 +331,256 @@ header > nav{
 
 .exp-1:hover, .exp-2:hover, .exp-3:hover, .exp-4:hover {
     box-shadow: var(--shadow-card);
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    border-color: hotpink;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    border-color: rgb(255, 255, 255);
     border: 5px solid;
 }
 
-
-
-/*
-.bio-image{
-   min-height: 80vsh;
-   max-width: 30%;
-
+#proyectos{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    top: 5em;
+}
+.mockup {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     
 }
-.bio-image > img{
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    height: 40%;
+
+.mockupcontainer{
+    position: absolute;
+    width: 53.5%;
+    height: 70%;
+    min-width: 53.5%;
+    min-height:70%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+   background-color: black;
+
 }
 
-.bio-content{
-    flex-grow: 1;
-    margin-left: 5em;
+.mockup > img{
+    width: 100%;
+    height: 100%;
+
 }
-    */
+.mockupcontainer > video{
+    width: 100%;
+    height: 100%;
 
+}
 
+.mockup2 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+    
+}
+.mockup2 > img{
+    width: 80%;
+    height: 80%;
 
+}
 
+#pt > h2{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 0;
+  
 
+   
+}
+.proyecto-pt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    
+}
+.img-pt > img{
+    width: 20%;
+    height: auto;
+}
 
+#pt > article{
+    width: 90%;
+    margin: 2em 2em 0em 2em;
+    color: white;
+    text-align: justify;
+}
+
+#server > h2{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 0;
+  
+
+   
+}
+.server-linux{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    
+}
+.img-srv > img{
+    width: 20%;
+    height: auto;
+}
+
+#server > article{
+    width: 90%;
+    margin: 2em 2em 0em 2em;
+    color: white;
+    text-align: justify;
+}
+
+    #cv {
+        text-align: center;
+        margin: 5em 0em 5em 0em;
+    }
+
+    .descarga-cv{
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        flex-direction: space-around;
+        height: 100%;
+    }
+    .texto-cv{
+        width: 50%;
+        
+    }
+
+    .texto-cv> h2{
+        color: white;
+        font-size: 40px;
+        margin-bottom: 1em;
+        width: 50%;
+        height: auto;
+    }
+    .texto-cv> p{
+        color: white;
+        font-size: 20px;
+        margin-bottom: 1em;
+        width: 80%;
+        justify-content:left;
+        height: auto;
+    }
+    
+    .descarga-cv > img {
+        height: 650px;
+        width: auto;
+        
+    }
+
+    #formulario {
+        width: 100%;
+        height: auto;
+        justify-items: center;
+        
+    }
+    #formulario > h2 {
+         color: white;
+        font-size: 40px;
+        margin-bottom: 1em;
+        height: auto;
+
+    }
+    .form-1 {
+        display: flex;
+        flex: 1;
+    }
+
+    .texto{
+        width: 50%;
+        color: white;
+        font-size: 20px;
+        margin: 5em;
+        
+    }
+    .texto > img {
+        margin: 2em;
+    }
+
+    .labels {
+        width: 50%;
+        margin: 2em;
+        padding: 3em;
+        height: auto;
+        background-color: rgba(255, 255, 255, 0.185);
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        justify-items: center;
+}
+
+form > p{
+    width: 50%;
+    height: auto;
+}
+
+    form > p > input {
+        margin: 2em;
+        height: 2.5em;
+        background-color: rgba(255, 255, 255, 0.548);
+        padding: 2em;
+    }
+
+   
+.cuentame {
+    height: 100px;
+}
+
+.enviar{
+    height: 50px;
+    width: 120px;
+    background-color:rgba(255, 255, 255, 0);
+    border: 2px solid #c403ff;
+    color: white;
+    font-weight: lighter;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.enviar:hover {
+    background-color: rgb(0, 183, 255);
+}
 
 
 
@@ -362,24 +615,24 @@ header > nav{
     #hero{
   position: relative;
   top: -30px;
+  min-width: 100%;
     
 }
+.info{
+    
+    min-width: 100%;
+}
  
-#bio {
-  flex-direction: column;
-  align-items: center;
-  min-width: 100%;
-}
 
-#exp {
-  flex-direction: column;
-  align-items: center;
-  min-width: 100%;
-}
 
 #exp-boxes {
   flex-direction: column;
   align-items: center;
-  min-width: 50%;
+  width: 100%;
+  
+}
+
+.exp-1, .exp-2, .exp-3, .exp-4 {
+    width: 100%;
 }
  }
