@@ -779,9 +779,14 @@ footer > div > a > img {
         height: 50px;
         width: 100px;
         padding: 15px;
-
-        
        
+}
+
+#fomulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 }
 
