@@ -160,15 +160,16 @@ a{
     padding-top: 10em;
     display: flex;
     align-items:start;
-    min-height: 80svh;
-    max-height: 80svh;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    
     justify-content: space-around;
     
 }
 
 .info{
     width: 40%;
-    min-width: 516px;
+   
 }
 #hero > div {
     width: 30%;
@@ -192,13 +193,13 @@ a{
     font-size: var(--font-size-title);
     color: var(--color-text-primary);
     margin-bottom: 0.5em;
-    min-width: 500px;
+    
 }
 .info > h2{
     font-size: var(--font-size-subtitle);
     color: var(--color-accent);
     margin-bottom: 1em;
-    min-width: 500px;
+    
 }
 
 .info > p{
@@ -207,7 +208,7 @@ a{
     margin-bottom: 2em;
     line-height: 1.5em;
     width: 100%;
-    min-width: 500px;
+    
 }
 
 .buttons{
@@ -363,6 +364,10 @@ a{
     border: 5px solid;
 }
 
+#proyectos {
+    min-height: 20vh;
+}
+
 #proyectos > h2{
     text-align: center;
     color: #c403ff;
@@ -371,6 +376,7 @@ a{
     margin-bottom: 0;
     position: relative;
     top: 5em;
+    
 }
 #proyectos > h3{
     text-align: center;
@@ -447,9 +453,6 @@ a{
     color: white;
     font-size: 50px;
     margin-bottom: 0;
-  
-
-   
 }
 .proyecto-pt{
     display: flex;
@@ -524,6 +527,7 @@ a{
     }
     .texto-cv{
         width: 50%;
+        
         justify-items: center;
         
     }
@@ -694,21 +698,29 @@ footer > div > a > img {
 
     #hero > img {
         display: none;
-
-
     }
-
+  
     #hero{
-  position: relative;
-  top: -30px;
-  min-width: 100%;
-    
+  width: 100%;
 }
-.info{
-    
-    min-width: 100%;
+.info {
+    width: 100%;
+    min-width: 80%;
 }
+.info > p {
+    width: 100%;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
  
+.intro-div{
+   display: none; 
+}
 
 
 #exp-boxes {
@@ -740,4 +752,38 @@ footer > div > a > img {
     display: none;
 }
 
- }
+
+.texto > img {
+    width: 70%;
+}
+
+#proyectos > h3 {display: none;}
+#proyectos2  > h3{
+   font-size: 40px;
+}
+
+.texto-cv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+
+#pt > article {
+    min-width: 80%;
+}
+
+ .texto-cv > a {
+        
+        height: 50px;
+        width: 100px;
+        padding: 15px;
+
+        
+       
+}
+}
+
+
+ 
