@@ -160,7 +160,7 @@ a{
     padding-top: 10em;
     display: flex;
     align-items:start;
-    min-height: 100vh;
+    min-height: 50vh;
     padding-bottom: 50px;
     
     justify-content: space-around;
@@ -682,7 +682,7 @@ footer > div > a > img {
 
 
 
-@media screen and (max-width: 1100px)
+@media screen and (max-width: 1200px)
  {
     .nav-list{
         display: none;
@@ -734,6 +734,10 @@ footer > div > a > img {
     width: 100%;
 }
 
+.mockup,
+#proyectos{
+    display: none;
+}
 .mockupcontainer {
     display: none;
 }
@@ -782,6 +786,9 @@ footer > div > a > img {
        
 }
 
+.form-1{
+    justify-content: center;
+}
 #fomulario {
     display: flex;
     justify-content: center;
