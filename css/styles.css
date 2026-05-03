@@ -565,6 +565,10 @@ a{
        
 }
 
+.table-wrapper {
+        overflow-x: auto;
+        margin-top: 30px;
+      }
  .texto-cv > a:hover {
     background-color: var(--color-hover);
  }
@@ -620,7 +624,135 @@ a{
        
 }
 
+ .dark {
+       
+        color: white;
+      }
+      .cards {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+      .card {
+        background: white;
+        padding: 30px 20px;
+        width: 280px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        color: #333;
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+      .card h3 {
+        color: #0d6efd;
+        margin-bottom: 15px;
+      }
+      #servicios {
+        background-image: url(./media/biblio.jpg);
+      }
 
+      .tech-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: left;
+        line-height: 1.8;
+      }
+      .tech-container h3 {
+        color: #0d6efd;
+        margin-top: 40px;
+        border-bottom: 1px solid #444;
+        padding-bottom: 5px;
+      }
+      .tech-container ul {
+        list-style-type: square;
+        padding-left: 20px;
+        margin-top: 15px;
+      }
+      .tech-container li {
+        margin-bottom: 12px;
+      }
+      .destacado-doc {
+        background: rgba(13, 110, 253, 0.1);
+        border-left: 5px solid #0d6efd;
+        padding: 20px;
+        margin: 30px 0;
+        border-radius: 0 8px 8px 0;
+      }
+      .destacado-doc h4 {
+        color: #0d6efd;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+      }
+      .table-wrapper {
+        overflow-x: auto;
+        margin-top: 30px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+        color: #333;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #0d6efd;
+        color: white;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        max-width: 450px;
+        margin: 30px auto 0 auto;
+      }
+      input,
+      textarea {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-family: inherit;
+      }
+      button[type="submit"] {
+        padding: 12px;
+        background: #0d6efd;
+        border: none;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+      button[type="submit"]:hover {
+        background: #0b5ed7;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px;
+        background: #1c1c1c;
+        color: white;
+        margin-top: 40px;
+        font-size: 0.9rem;
+      }
+      .section {
+        padding: 60px 20px;
+        text-align: center;
+      }
 
 form > p{
     width: 50%;
